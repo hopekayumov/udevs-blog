@@ -1,0 +1,51 @@
+.header {
+    padding-top: 20px;
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    width: 146px;
+    height: 48px;
+}
+.header-reg-panel {
+    display: flex;
+    align-items: center;
+}
+.header-notification-btn {
+    border: none;
+    cursor: pointer;
+    background: #fff;
+}
+.header-notification-count {
+    font-family: Inter;
+    font-size: 14px;
+    position: relative;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: #F76659;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: #fff;
+    top: -15px;
+    right: 45px;
+}
+.header-notification {
+    width: 32px;
+    height: 32px;
+    margin-right: 24px;
+}
+.header-login {
+    font-family: Inter;
+    border: none;
+    background: #1B5BF7;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
