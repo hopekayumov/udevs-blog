@@ -47,6 +47,9 @@ h1, h2, h3, h4, h5 {
     font-size: 16px;
     color: #1E2833;
 }
+.resources__link:hover {
+    color: #1B5BF7;
+}
 /* About-us */
 .about-us__title {
     font-family: Inter;
@@ -67,6 +70,9 @@ h1, h2, h3, h4, h5 {
     font-family: Inter;
     font-size: 16px;
     color: #1E2833;
+}
+.about-us__link:hover {
+    color: #1B5BF7;
 }
 .help__title {
     font-family: Inter;
