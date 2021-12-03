@@ -1,3 +1,4 @@
+import React from 'react';
 import './footer.css'
 import footerLogo from '../header/img/udevs-logo.svg'
 

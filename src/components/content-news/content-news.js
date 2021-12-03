@@ -1,3 +1,4 @@
+import React from 'react';
 import './content-news.css'
 import ContentNewsItem from "../content-news-item/content-news-item";
 

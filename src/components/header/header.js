@@ -1,3 +1,4 @@
+import React from 'react';
 import './header.css'
 import logo from './img/udevs-logo.svg'
 import headerNotification from './img/notifications.svg'

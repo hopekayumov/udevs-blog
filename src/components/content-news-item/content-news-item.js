@@ -1,3 +1,4 @@
+import React from 'react';
 import './content-news-item.css'
 import SigaretteHand from "./img/sigarette-hand.png";
 import Views from './img/views.png'
