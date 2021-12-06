@@ -2,13 +2,14 @@ import React from 'react';
 import './header.css'
 import logo from './img/udevs-logo.svg'
 import headerNotification from './img/notifications.svg'
+import {Link} from "react-router-dom";
 
 export default function Headers() {
     return (
         <div className='header'>
-            <a href="#">
-                <img src={logo} className='header-logo'/>
-            </a>
+           <Link to="/">
+               <img src={logo} className='header-logo'/>
+           </Link>
 
             <div className='header-reg-panel'>
                 <button className='header-notification-btn'>

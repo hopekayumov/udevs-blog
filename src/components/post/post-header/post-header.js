@@ -1,13 +1,14 @@
 import React from 'react';
 import './post-header.css';
 import Logo from '../../header/img/udevs-logo.svg'
+import {Link} from "react-router-dom";
 
 const PostHeader = () => {
     return (
         <div className="post-header">
-            <a href="#">
-                <img src={Logo} className="post-header-logo" alt="Udevs logo"/>
-            </a>
+           <Link to="/">
+               <img src={Logo} className="post-header-logo" alt="Udevs logo"/>
+           </Link>
             <nav className="post-nav">
                 <ul className="post-nav-list">
                     <li className="post-nav-item"><a className="post-nav-link" href="#">Все потоки</a></li>

@@ -7,7 +7,9 @@ import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 export default function ContentNewsItem({title, id}) {
     return (
         <div className='content-news__item'>
-            <img src={SigaretteHand} className='content-news__img' alt="Sigarette hand"/>
+            <Link to={`/post/${id}`}>
+                <img src={SigaretteHand} className='content-news__img' alt="Sigarette hand"/>
+            </Link>
             <article className='content-news__item--properties'>
                 <span className='content-news__item--time'>18:26 11.01.2021</span>
                 <img src={Views} className='content-news__item--views-logo' alt="Views svg"/>
