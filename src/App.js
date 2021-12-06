@@ -1,16 +1,17 @@
 import './App.css';
-import Headers from "./components/header/header";
-import Navbar from "./components/navbar/navbar";
-import ContentNews from "./components/content-news/content-news";
-import Footer from "./components/footer/footer";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from "./components/home";
+import Post from "./components/post/post";
 
 function App() {
   return (
       <div className='container'>
-          <Headers></Headers>
-          <Navbar></Navbar>
-          <ContentNews></ContentNews>
-          <Footer></Footer>
+          <Router>
+              <Routes>
+                  <Route path="/" element={<Home></Home>}></Route>
+                  <Route path="/post/:id" element={<Post></Post>}></Route>
+              </Routes>
+          </Router>
       </div>
   );
 }

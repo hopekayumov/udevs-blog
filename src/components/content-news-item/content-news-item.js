@@ -2,8 +2,9 @@ import React from 'react';
 import './content-news-item.css'
 import SigaretteHand from "./img/sigarette-hand.png";
 import Views from './img/views.png'
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 
-export default function ContentNewsItem() {
+export default function ContentNewsItem({title, id}) {
     return (
         <div className='content-news__item'>
             <img src={SigaretteHand} className='content-news__img' alt="Sigarette hand"/>
@@ -12,7 +13,8 @@ export default function ContentNewsItem() {
                 <img src={Views} className='content-news__item--views-logo' alt="Views svg"/>
                 <span className='content-news__item--views'>365</span>
             </article>
-            <a href='#' className='content-news__item--text'>ВОЗ: молодые жители Европы стали меньше курить, но пристрастились .....</a>
+            <Link to={`/post/${id}`} className='content-news__item--text'>{title}</Link>
+
         </div>
     );
 }
