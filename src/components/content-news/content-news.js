@@ -2,8 +2,6 @@ import React, {useState, useEffect,} from 'react';
 import './content-news.css'
 import ContentNewsItem from "../content-news-item/content-news-item";
 import axios from "axios";
-import {useParams} from "react-router-dom";
-import PostContent from "../post/post-content/post-content";
 
 export default function ContentNews() {
     const [posts, setPosts] = useState([])
