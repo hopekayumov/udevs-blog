@@ -5,7 +5,8 @@
 .content-news__img {
     width: 270px;
     height: 210px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
+    border-radius: 7px;
 }
 .content-news__item--properties {
     margin-bottom: 9px;

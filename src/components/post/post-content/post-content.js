@@ -4,25 +4,23 @@ import './post-content.css'
 import Eye from './img/eye.png'
 import HeroImg from './img/hero-img.png'
 import PostProfile from "../post-profie/post-profile";
-import axios from "axios";
 import {useParams} from "react-router-dom";
+import {collection, getDocs} from "firebase/firestore";
+import {db} from "../../firebase-config";
+
 const PostContent = () => {
     const [posts, setPosts] = useState([])
     const {id} = useParams()
-    console.log(id)
+    const postsCollectionRef = collection(db, "posts")
+
     useEffect(() => {
-        getPosts()
+        const getPosts = async (id) => {
+            const data = await getDocs(postsCollectionRef)
+            setPosts(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
+        }
+        getPosts(id)
     }, [])
 
-    function getPosts() {
-        axios
-            .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-            .then(({data}) => {
-                setPosts(data)
-                console.log(data)
-            })
-            .catch((error) => console.log(error))
-    }
     return (
         <div className="post-content">
             <PostProfile></PostProfile>
@@ -35,8 +33,17 @@ const PostContent = () => {
                     <span className="main-post-views">365</span>
                 </div>
                 <div className="main-post-text">
-                    <h1 className="main-post-text__title">{posts.title}</h1>
-                    <p className="main-post-text__body">{posts.body}</p>
+                    {posts.map((post) => {
+                        if (post.id === id) {
+                            return (
+                                <div>
+                                    <h1 className="main-post-text__title">{post.title}</h1>
+                                    <p className="main-post-text__body">{post.descr}</p>
+                                </div>
+                            );
+                        }
+                    })}
+
                 </div>
             </div>
 
