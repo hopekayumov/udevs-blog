@@ -32,7 +32,7 @@ export default function Headers() {
     return (
         <div className='header'>
            <Link to="/">
-               <img src={logo} className='header-logo'/>
+               <img src={logo} className='header-logo' alt="logo"/>
            </Link>
 
             <div className='header-reg-panel'>

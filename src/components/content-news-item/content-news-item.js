@@ -1,8 +1,7 @@
 import React from 'react';
 import './content-news-item.css'
-import SigaretteHand from "./img/sigarette-hand.png";
 import Views from './img/views.png'
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export default function ContentNewsItem({title, id, img}) {
     return (
