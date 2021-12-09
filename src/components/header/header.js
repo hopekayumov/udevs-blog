@@ -29,6 +29,7 @@ export default function Headers() {
     function logOut () {
         localStorage.removeItem("isAuthorized")
     }
+
     return (
         <div className='header'>
            <Link to="/">

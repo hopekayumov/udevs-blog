@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer>
             <div className='company'>
-                <a href="#">
+                <a href="##">
                     <img src={footerLogo} className='footer-logo' alt="Udevs logo"/>
                 </a>
                 <div className='company__about'>
@@ -19,19 +19,19 @@ export default function Footer() {
             <div className='resources'>
                 <h3 className='resources__title'>Ресурсы</h3>
                 <ul className='resources__list'>
-                    <li className='resources__item'><a href="#" className='resources__link'>Статьи</a></li>
-                    <li className='resources__item'><a href="#" className='resources__link'>Журналы</a></li>
-                    <li className='resources__item'><a href="#" className='resources__link'>Газеты</a></li>
-                    <li className='resources__item'><a href="#" className='resources__link'>Диплом</a></li>
+                    <li className='resources__item'><a href="##" className='resources__link'>Статьи</a></li>
+                    <li className='resources__item'><a href="##" className='resources__link'>Журналы</a></li>
+                    <li className='resources__item'><a href="##" className='resources__link'>Газеты</a></li>
+                    <li className='resources__item'><a href="##" className='resources__link'>Диплом</a></li>
                 </ul>
             </div>
             <div className='about-us'>
                 <h3 className='about-us__title'>О нас</h3>
                 <ul className='about-us__list'>
-                    <li className='about-us__item'><a href="#" className='about-us__link'>Контакты</a></li>
-                    <li className='about-us__item'><a href="#" className='about-us__link'>Помощь</a></li>
-                    <li className='about-us__item'><a href="#" className='about-us__link'>Заявки</a></li>
-                    <li className='about-us__item'><a href="#" className='about-us__link'>Политика</a></li>
+                    <li className='about-us__item'><a href="##" className='about-us__link'>Контакты</a></li>
+                    <li className='about-us__item'><a href="##" className='about-us__link'>Помощь</a></li>
+                    <li className='about-us__item'><a href="##" className='about-us__link'>Заявки</a></li>
+                    <li className='about-us__item'><a href="##" className='about-us__link'>Политика</a></li>
                 </ul>
             </div>
             <div className='help'>

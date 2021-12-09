@@ -1,7 +1,7 @@
 import React from 'react';
-import PostHeader from "./post-header/post-header";
-import PostContent from "./post-content/post-content";
-import Footer from "../footer/footer";
+import PostHeader from "../components/post/post-header/post-header";
+import PostContent from "../components/post/post-content/post-content";
+import Footer from "../components/footer/footer";
 
 const Post = () => {
     return (

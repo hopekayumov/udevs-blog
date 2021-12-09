@@ -1,8 +1,8 @@
 import React from 'react';
-import Headers from "./header/header";
-import Navbar from "./navbar/navbar";
-import ContentNews from "./content-news/content-news";
-import Footer from "./footer/footer";
+import Headers from "../components/header/header";
+import Navbar from "../components/navbar/navbar";
+import ContentNews from "../components/content-news/content-news";
+import Footer from "../components/footer/footer";
 
 const Home = () => {
     return (

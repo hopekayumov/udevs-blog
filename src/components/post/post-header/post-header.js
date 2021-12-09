@@ -11,13 +11,13 @@ const PostHeader = () => {
            </Link>
             <nav className="post-nav">
                 <ul className="post-nav-list">
-                    <li className="post-nav-item"><a className="post-nav-link" href="#">Все потоки</a></li>
-                    <li className="post-nav-item"><a className="post-nav-link" href="#">Разработка</a></li>
-                    <li className="post-nav-item"><a className="post-nav-link" href="#">Администрирование</a></li>
-                    <li className="post-nav-item"><a className="post-nav-link" href="#">Дизайн</a></li>
-                    <li className="post-nav-item"><a className="post-nav-link" href="#">Менеджмент</a></li>
-                    <li className="post-nav-item"><a className="post-nav-link" href="#">Маркетинг</a></li>
-                    <li className="post-nav-item"><a className="post-nav-link" href="#">Научпоп</a></li>
+                    <li className="post-nav-item"><a className="post-nav-link" href="##">Все потоки</a></li>
+                    <li className="post-nav-item"><a className="post-nav-link" href="##">Разработка</a></li>
+                    <li className="post-nav-item"><a className="post-nav-link" href="##">Администрирование</a></li>
+                    <li className="post-nav-item"><a className="post-nav-link" href="##">Дизайн</a></li>
+                    <li className="post-nav-item"><a className="post-nav-link" href="##">Менеджмент</a></li>
+                    <li className="post-nav-item"><a className="post-nav-link" href="##">Маркетинг</a></li>
+                    <li className="post-nav-item"><a className="post-nav-link" href="##">Научпоп</a></li>
                 </ul>
             </nav>
             <div className="btn">
