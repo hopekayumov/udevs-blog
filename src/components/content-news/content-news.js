@@ -13,7 +13,7 @@ export default function ContentNews() {
             setPosts(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
         }
         getPosts()
-    }, [])
+    }, [postsCollectionRef])
     return (
         <section className='content-news'>
             {posts.map((post, id) => (

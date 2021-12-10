@@ -2,6 +2,7 @@ import React from 'react';
 import './post-header.css';
 import Logo from '../../header/img/udevs-logo.svg'
 import {Link} from "react-router-dom";
+import AuthPanel from '../../../auth';
 
 const PostHeader = () => {
     return (
@@ -17,12 +18,9 @@ const PostHeader = () => {
                     <li className="post-nav-item"><a className="post-nav-link" href="##">Дизайн</a></li>
                     <li className="post-nav-item"><a className="post-nav-link" href="##">Менеджмент</a></li>
                     <li className="post-nav-item"><a className="post-nav-link" href="##">Маркетинг</a></li>
-                    <li className="post-nav-item"><a className="post-nav-link" href="##">Научпоп</a></li>
                 </ul>
             </nav>
-            <div className="btn">
-                <button className="header-login">Войти</button>
-            </div>
+            <AuthPanel></AuthPanel>
         </div>
     );
 };
