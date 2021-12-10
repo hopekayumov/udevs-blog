@@ -8,9 +8,10 @@ function CreatePost () {
     const postsCollectionRef = collection(db, "posts");
     const [newTitle, setNewTitle] = useState("");
     const [newDescr, setNewDescr] = useState("");
+    const defaultImg = "https://firebasestorage.googleapis.com/v0/b/udevs-blog.appspot.com/o/hai-tech-10.jpg?alt=media&token=65ce3a7f-02f8-4041-a891-4ff5cbd147a5"
 
     const createPoster = async () => {
-        await addDoc(postsCollectionRef, {title: newTitle, descr: newDescr})
+        await addDoc(postsCollectionRef, {title: newTitle, descr: newDescr, img: defaultImg})
     }
     return (
         <div>
