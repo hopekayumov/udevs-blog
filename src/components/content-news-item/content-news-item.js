@@ -2,7 +2,6 @@ import React from 'react';
 import './content-news-item.css'
 import Views from './img/views.png'
 import {Link} from "react-router-dom";
-import DefaultImg from "./img/deafault.png"
 
 export default function ContentNewsItem({title, id, img}) {
     return (
